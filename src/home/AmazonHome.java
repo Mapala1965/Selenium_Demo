@@ -14,8 +14,10 @@ public class AmazonHome {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://www.amazon.com/");
 		System.out.println(driver.getTitle());
+		
+		
 		driver.close();
-
+        driver.quit();
 	}
 
 }
